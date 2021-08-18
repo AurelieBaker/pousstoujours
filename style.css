@@ -1,0 +1,700 @@
+/*
+
+bg : #FFFBF7
+bg2: #E2D2C3
+bg3: rgba(226, 218, 195, .2)
+écriture: #353F27
+navigation: #1B5734
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&display=swap');
+/*=============================================================================
+GENERAL
+==============================================================================*/
+
+body{
+    font-family: 'Monserrat', sans-serif;
+    background: #FFFBF7 ;
+    font-size: 18px;
+    color: #353F27 ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2, h3{
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1B5734;
+}
+
+a:hover{
+    text-shadow: 0.9px 1px #353F27;
+    filter: hue-rotate(-15deg);
+    transition: 0.2s;
+}
+
+p, div{
+    padding: 0;
+    margin: 0;
+}
+
+/*=============================================================================
+LAYOUT
+==============================================================================*/
+
+.wrapper{
+    width: 1200px;
+    margin: auto;
+}
+
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+/*=============================================================================
+MODULE
+==============================================================================*/
+
+/* Header*/
+
+header{
+    background: #E2D2C3 ;
+}
+
+.header .wrapper{
+    flex-direction: row;
+}
+
+img:hover{
+    filter: hue-rotate(-15deg);
+    transition: 0.1s;
+}
+
+h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-style: italic;
+    background-image:url(images/feuille_droite.svg);
+    background-repeat: no-repeat;
+    background-position-x: right 10px;
+    background-position-y: 15px;
+}
+
+
+.devise{
+    font-size: 24px;
+}
+
+.icones li{
+    margin: 10px 10px ;
+}
+
+
+
+
+/*Menu*/
+
+
+#page_contact{
+    display: none;
+}
+
+.menu_principal{
+    background: #1B5734;
+    width: 1800px;
+
+}
+.menu_principal ul{
+ display: flex;
+ flex-direction: row;
+ margin: 0;
+}
+
+.menu_principal a{
+    display: block;
+    color: #fff;
+    padding: 24px 30px;
+}
+
+
+.menu_principal a:hover{
+    background: #fff;
+    color: #1B5734;
+}
+/*
+.loupe a{
+    padding: 20px;
+}*/
+.loupe:hover{
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.loupe:hover .loupe{
+    fill: #1B5734;
+}
+
+.menu_burger{
+    display: none;
+}
+
+/* Fil d'arianne*/
+
+.arianne{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+}
+.arianne li{
+    margin-right: 10px;
+}
+
+/* Main*/
+
+.partie{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/feuille_droite.svg);
+    background-repeat: no-repeat;
+    background-position-x: right 450px;
+    background-position-y: 73px;
+}
+
+.valentine{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/feuille_gauche.svg);
+    background-repeat: no-repeat;
+    background-position-x: 375px;
+    background-position-y: 73px;
+}
+
+h2{
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.tondeuse{
+    display: flex;
+    margin: 67px;
+   
+}
+
+.section{
+    display: flex;
+
+}
+.desc_valentine{
+    width: 600px;
+    margin: auto;
+}
+
+.desc_valentine img{
+    filter: none;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.caracteristiques{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.caracteristiques h3{
+    margin-top: 0;
+}
+
+.euro{
+    font-family: 'Monserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.prix abbr{
+    text-decoration: none;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.prix{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 64px;
+}
+
+button{
+    color: #fff;
+    background-color: #1B5734;
+    width: 259px;
+    height: 65px;
+    left: 1301px;
+    top: 990px;
+    margin-bottom: 4px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 570px;
+    height: 65px;
+}
+
+.button a{
+    display: block;
+    color: #fff;
+    padding: 24px 30px;
+   
+}
+
+.button :hover{
+    background: #fff;
+    color: #1B5734;
+    font-weight: 700;
+    text-shadow: 1px 1px #1B5734;
+    border-radius: 10px;
+    transform: scale(0.9);
+    transition: all 300ms;
+    box-shadow: 10px 5px 5px #1B5734;
+}
+
+/*section2*/
+
+.section2{
+
+    background: rgba(226, 218, 195, .2) ;
+    margin-top: 82px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #1B5734;
+}
+
+.articles{
+    background-image: url(images/feuille_gauche.svg);
+    background-repeat: no-repeat;
+    background-position-x:left 15px;
+    background-position-y: 55px;
+}
+
+.sans_nom{
+    margin-top: 58px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    text-align: left;
+   
+}
+.similaires{
+    display: flex;
+    flex-direction: row;
+   margin-bottom: 91px;
+}
+.truc{
+    margin-right: 20px;
+}
+.machin{
+    margin-right: 20px;
+}
+.span{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/*
+.similaires li{
+    padding: 14px;
+}
+
+/*Footer*/
+
+footer{
+    background: #E2D2C3;;
+    display: flex;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+}
+.footer2{
+    width: 100%;
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+.facebook{
+    display: flex;
+    flex-direction: row;
+}
+.infos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media all and (max-width: 1280px){
+
+    
+    body{
+        width: auto;
+        margin: 0;
+    }
+
+    .wrapper{
+        width: 960px;
+        margin: auto;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header*/
+
+    .header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .titre{
+        display: none;
+    }
+
+    .icones{
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    /* Menu */
+
+    .loupe{
+        margin-right: 20px;
+    }
+
+    /* Section */
+
+    .section{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block{
+        margin: auto;
+    }
+
+    .caracteristiques{
+        align-items: center;
+    }
+
+    h3{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .caracteristiques .wrapper{
+        width: auto;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .block{
+        display: flex;
+        align-items: center;
+    }
+
+    .box{
+        margin-top: 20px;
+    }
+
+    /* Section 2*/
+
+    .similaires{
+        display: flex;
+        align-items: center;
+    }
+
+    section .similaires{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .wrapper{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .articles .sans_nom{
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .articles{
+        background-image: none;
+    }
+
+
+
+}
+
+@media all and (max-width : 960px) {
+
+    body{
+        width:auto;
+        font-size: 14px;
+        display: flex;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .wrapper{
+        width: 320px;
+        margin: auto;
+    }
+
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titre{
+        display: none;
+    }
+
+    .icones span{
+        display: none;
+    }
+    .icones{
+        margin-top: 10px;
+    }
+
+    .menu_principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+    }
+
+    #page_contact{
+        display: flex;
+        margin-left: 50px;
+    }
+
+    ul.menu_p{
+        position: relative;
+        left: -4000px;
+    }
+
+    .menu_burger{
+        display: flex;
+        margin-left: -525px;
+    }
+
+    ul.is_visible{
+        left: -625px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .total_burger{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loupe{
+        display: none;
+    }
+
+    .arianne li{
+        display: none;
+    }
+
+    .partie{
+        background-image: none;
+    }
+
+    .valentine{
+        background-image: none;
+    }
+
+    .tondeuse h2{
+        text-align: center;
+        margin-left: 55px;
+    }
+
+    .desc_valentine p{
+        width: 385px;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        margin-bottom: 10px;
+        margin-left: -10px;
+    }
+
+    .desc_valentine img{
+        width: 385px;
+        height: 219px;
+        margin-left: -25px;
+    }
+
+    .section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .caracteristiques{
+        width: 385px;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        margin-left: -265px;
+    }
+
+    .prix p{
+        font-size: 20px;
+        width: 385px;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .prix p a{
+        font-size: 18px;
+    }
+    
+    .button{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    button{
+        margin-top: 20px;
+        width: 240px;
+        height: 175px;
+        left: 1301px;
+        top: 990px;
+        margin-left: 40px;
+    }
+
+    .articles{
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .similaires{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span{
+        font-size: 18px;
+    }
+
+    .similaires .truc{
+        margin-bottom: 20px;
+    }
+
+    .similaires .machin{
+        margin-bottom: 20px;
+    }
+
+    .similaires .bidule{
+        margin-bottom: 20px;
+        margin-left: -15px;
+    }
+
+
+    .menu_footer{
+        display: none;
+    }
+
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
